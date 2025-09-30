@@ -12,11 +12,13 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
+    return GetMaterialApp(
       title: "Chatbot",
-      home: Homescreen(),
+      theme: ThemeData(
+        fontFamily: 'Chillax',
+      ),
+      home: const Homescreen(),
       debugShowCheckedModeBanner: false,
-
     );
   }
 }

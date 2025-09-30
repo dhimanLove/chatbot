@@ -36,7 +36,7 @@ class ModernCard extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
         children: [
-          // Top icons
+
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [

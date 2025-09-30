@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:modellll/widgets/cards.dart';
+import 'package:modellll/widgets/chips.dart';
 import 'package:modellll/widgets/components/globalvar.dart';
 
 class Homescreen extends StatefulWidget {
@@ -54,7 +55,7 @@ class _HomescreenState extends State<Homescreen> {
               Divider(color: Colors.grey, thickness: 1),
 
               SizedBox(
-                height: scrh * 0.22,
+                height: scrh * 0.2,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   physics: BouncingScrollPhysics(),
@@ -104,8 +105,76 @@ class _HomescreenState extends State<Homescreen> {
                       color: Colors.grey,
                     ),
                   ),
-
                 ],
+              ),
+              SizedBox(height: scrh * 0.02),
+
+              SizedBox(
+                height: scrh * 0.06,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  physics: BouncingScrollPhysics(),
+                  shrinkWrap: true,
+                  children: [
+                    Chipss(
+                      icon: Icons.wallet_rounded,
+                      text: 'Ecommerce web design',
+                      borderColor: Colors.transparent,
+                      iconColor: Colors.red,
+                      textSize: 14,
+                    ),
+
+                    Chipss(
+                      icon: Icons.wallet_rounded,
+                      text: 'Loda lexle',
+                      borderColor: Colors.transparent,
+                      iconColor: Colors.red,
+                      textSize: 14,
+                    ),
+
+                    Chipss(
+                      icon: Icons.wallet_rounded,
+                      text: 'Loda leele',
+                      borderColor: Colors.transparent,
+                      iconColor: Colors.red,
+                      textSize: 14,
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(height: scrh * 0.02),
+              SizedBox(
+                height: scrh * 0.06,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  physics: BouncingScrollPhysics(),
+                  shrinkWrap: true,
+                  children: [
+                    Chipss(
+                      icon: Icons.wallet_rounded,
+                      text: 'Make me an ecommerce web design',
+                      borderColor: Colors.transparent,
+                      iconColor: Colors.red,
+                      textSize: 14,
+                    ),
+
+                    Chipss(
+                      icon: Icons.wallet_rounded,
+                      text: 'Loda leele',
+                      borderColor: Colors.transparent,
+                      iconColor: Colors.red,
+                      textSize: 14,
+                    ),
+
+                    Chipss(
+                      icon: Icons.wallet_rounded,
+                      text: 'Loda leele',
+                      borderColor: Colors.transparent,
+                      iconColor: Colors.red,
+                      textSize: 14,
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
